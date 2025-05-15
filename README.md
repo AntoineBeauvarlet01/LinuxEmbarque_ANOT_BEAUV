@@ -12,9 +12,14 @@ Quelle est la taille occupée ? Utilisez la commande suivante :
 ```
 df -h
 ```
-> La taille est de 1.3G
+> La taille est de 1.3GB.
 
 > ![image](https://github.com/user-attachments/assets/eb16d2da-06b8-4309-a20d-f0d9bd283e2d)
+
+Nous avons augmenté la taille du système de fichiers :
+> Initialement, on avait 3 GB de disponible. Notre carte a 4 GB de mémoire, donc l'effet n'a pas été très remarquable, nous sommes passés à 3.2 GB.
+
+> ![image](https://github.com/user-attachments/assets/c782e170-60bb-4777-8841-f2b63583a6b1)
 
 
 La carte dispose de l'adresse IP suivante :
