@@ -37,6 +37,11 @@ auto eth0
 iface eth0 inet dhcp
 allow-hotplug eth0
 ```
+Après la modification, notre adresse IP est : 
+> 192.168.0.221
+
+> ![image](https://github.com/user-attachments/assets/f7f5e4dd-8efd-4623-a649-e4771ec72d2e)
+
 On observe bien **le ping** : 
 > screen
 
