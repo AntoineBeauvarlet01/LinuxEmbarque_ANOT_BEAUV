@@ -30,7 +30,7 @@ On observe bien **le ping** :
 > screen
 
 # **1.4 Découverte de la cible**
-Ce texte est <span style="color: red;">rouge</span>.
+<span class="math-inline">\[color\=blue\]Ce texte est bleu\.</span>[/color]
 
 
 
