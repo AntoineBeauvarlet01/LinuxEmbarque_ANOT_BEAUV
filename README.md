@@ -1,5 +1,5 @@
 # LinuxEmbarque_ANOT_BEAUV
-Projet 3eme année Linux Embarqué
+Projet 3ème année Linux Embarqué
 
 le baud rate est à **115200**
 # **1.3 Connexion au système**
@@ -12,7 +12,9 @@ Quelle est la taille occupée ? Utilisez la commande suivante :
 ```
 df -h
 ```
-> La taille est de : 
+> La taille est de 1.3G
+> ![image](https://github.com/user-attachments/assets/eb16d2da-06b8-4309-a20d-f0d9bd283e2d)
+
 
 La carte dispose de l'adresse IP suivante :
 > screen
