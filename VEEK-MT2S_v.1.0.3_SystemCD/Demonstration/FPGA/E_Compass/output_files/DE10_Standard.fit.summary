@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Jan 13 18:01:28 2017
+Quartus Prime Version : 16.1.1 Build 200 11/30/2016 SJ Standard Edition
+Revision Name : DE10_Standard
+Top-level Entity Name : DE10_Standard
+Family : Cyclone V
+Device : 5CSXFC6D6F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 3,467 / 41,910 ( 8 % )
+Total registers : 6035
+Total pins : 278 / 499 ( 56 % )
+Total virtual pins : 0
+Total block memory bits : 113,648 / 5,662,720 ( 2 % )
+Total RAM Blocks : 24 / 553 ( 4 % )
+Total DSP Blocks : 3 / 112 ( 3 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 2 / 15 ( 13 % )
+Total DLLs : 0 / 4 ( 0 % )
