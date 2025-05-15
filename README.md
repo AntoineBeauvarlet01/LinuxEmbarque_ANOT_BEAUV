@@ -2,7 +2,7 @@
 Projet 3eme année Linux Embarqué
 
 le baud rate est à **115200**
-
+# **1.3 Connexion au système**
 Pour vous identifier :
   * login : root
   * password : aucun (vraiment rien, ne tapez que sur entrée)
@@ -28,3 +28,13 @@ allow-hotplug eth0
 ```
 On observe bien **le ping** : 
 > screen
+
+# **1.4 Découverte de la cible**
+Ce texte est <span style="color: red;">rouge</span>.
+
+
+
+
+
+
+
