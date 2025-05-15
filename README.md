@@ -1,7 +1,7 @@
 # LinuxEmbarque_ANOT_BEAUV
 Projet 3ème année Linux Embarqué
 
-le baud rate est à **115200**
+Le baud rate est à **115200**
 # **1.3 Connexion au système**
 Pour vous identifier :
   * login : root
@@ -23,7 +23,10 @@ Nous avons augmenté la taille du système de fichiers :
 
 
 La carte dispose de l'adresse IP suivante :
-> screen
+> 127.0.0.1
+
+> ![image](https://github.com/user-attachments/assets/1fff7dbf-9396-4703-bc70-93319a9d9706)
+
 
 Modification de /etc/network/interfaces de la manière suivante :
 ```
