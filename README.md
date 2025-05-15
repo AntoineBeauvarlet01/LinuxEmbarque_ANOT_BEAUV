@@ -60,7 +60,7 @@ arm-linux-gnueabihf-gcc hello.c -o hello.o
 #include <stdio.h>
 
 int main() {
-    printf("Hello world !\n");
+    printf("Hello world !\n\r");
     return 0;
 }
 ```
