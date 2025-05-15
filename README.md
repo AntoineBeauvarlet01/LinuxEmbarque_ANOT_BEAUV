@@ -50,7 +50,7 @@ Et le ping depuis mon ordinateur :
 
 # **1.4 Découverte de la cible**
 
-Réalisez un programme "Hello World !"
+Réalisez un programme "Hello World !"     ./nomfichier
 ```arm-linux-gnueabihf-gcc hello.c -o hello.o```
 ```
 #include <stdio.h>
