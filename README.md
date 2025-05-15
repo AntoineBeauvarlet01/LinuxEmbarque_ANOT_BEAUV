@@ -67,7 +67,62 @@ int main() {
 
 Écrire un programme en C qui réalise un chenillard
 ```
-**ici**
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+#define NUM_LEDS 4 // Modifie ce nombre en fonction du nombre de LED que tu utilises
+#define DELAY_MS 200 // Délai en millisecondes entre chaque allumage de LED
+
+const char *led_paths[NUM_LEDS] = {
+    "/sys/class/leds/fpga_led0/brightness", // Remplace par le chemin de ta première LED
+    "/sys/class/leds/fpga_led1/brightness", // Remplace par le chemin de ta deuxième LED
+    "/sys/class/leds/fpga_led2/brightness", // Remplace par le chemin de ta troisième LED
+    "/sys/class/leds/fpga_led3/brightness"  // Remplace par le chemin de ta quatrième LED
+};
+
+// Fonction pour allumer une LED
+void allumer_led(int led_index) {
+    FILE *fp = fopen(led_paths[led_index], "w");
+    if (fp == NULL) {
+        perror("Erreur lors de l'ouverture du fichier de la LED");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(fp, "1");
+    fclose(fp);
+}
+
+// Fonction pour éteindre une LED
+void eteindre_led(int led_index) {
+    FILE *fp = fopen(led_paths[led_index], "w");
+    if (fp == NULL) {
+        perror("Erreur lors de l'ouverture du fichier de la LED");
+        exit(EXIT_FAILURE);
+    }
+    fprintf(fp, "0");
+    fclose(fp);
+}
+
+int main() {
+    while (1) {
+        // Chenillard de gauche à droite
+        for (int i = 0; i < NUM_LEDS; i++) {
+            allumer_led(i);
+            usleep(DELAY_MS * 1000); // Conversion ms en µs
+            eteindre_led(i);
+        }
+
+        // Chenillard de droite à gauche (optionnel pour un aller-retour)
+        for (int i = NUM_LEDS - 2; i >= 1; i--) {
+            allumer_led(i);
+            usleep(DELAY_MS * 1000);
+            eteindre_led(i);
+        }
+    }
+
+    return 0;
+}
 ```
 
 
