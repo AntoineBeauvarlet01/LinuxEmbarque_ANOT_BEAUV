@@ -50,20 +50,19 @@ Et le ping depuis mon ordinateur :
 
 # **1.4 Découverte de la cible**
 
-Réalisez un programme "Hello World !"   :  ```./nomfichier```
-
-```
-arm-linux-gnueabihf-gcc hello.c -o hello.o
-```
+Réalisez un programme "Hello World !".
 
 ```
 #include <stdio.h>
 
 int main() {
-    printf("Hello world !\n\r");
+    printf("Hello world !\r\n");
     return 0;
 }
 ```
+
+> ![image](https://github.com/user-attachments/assets/d8a232d4-4bec-4603-8067-39b1af85cdfe)
+
 
 Écrire un programme en C qui réalise un chenillard
 ```
