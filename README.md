@@ -53,7 +53,12 @@ Et le ping depuis mon ordinateur :
 Réalisez un programme "Hello World !"
 ```arm-linux-gnueabihf-gcc hello.c -o hello.o```
 ```
-**ici**
+#include <stdio.h>
+
+int main() {
+    printf("Hello world !\n");
+    return 0;
+}
 ```
 
 Écrire un programme en C qui réalise un chenillard
