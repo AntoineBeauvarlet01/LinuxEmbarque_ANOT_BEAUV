@@ -127,6 +127,23 @@ int main() {
 
 # 2 Modules kernel (TP2)
 
+## 2.1 Accès aux registres
+
+programme qui accède directement aux registres depuis l’espace utilisateur :
+```
+ivi
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
