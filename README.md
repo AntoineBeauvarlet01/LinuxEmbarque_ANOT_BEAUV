@@ -70,61 +70,42 @@ int main() {
 ```
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <unistd.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <string.h>
 
-#define NUM_LEDS 4 // Modifie ce nombre en fonction du nombre de LED que tu utilises
-#define DELAY_MS 200 // Délai en millisecondes entre chaque allumage de LED
+#define NUM_LEDS 9 // Nombre de LED
+#define DELAY_MS 200 // Délai en ms entre chaque allumage de LED
 
 const char *led_paths[NUM_LEDS] = {
-    "/sys/class/leds/fpga_led1/brightness", 
-    "/sys/class/leds/fpga_led2/brightness", 
-    "/sys/class/leds/fpga_led3/brightness",  
+    "/sys/class/leds/fpga_led1/brightness",
+    "/sys/class/leds/fpga_led2/brightness",
+    "/sys/class/leds/fpga_led3/brightness",
     "/sys/class/leds/fpga_led4/brightness",
-    "/sys/class/leds/fpga_led5/brightness", 
-    "/sys/class/leds/fpga_led6/brightness", 
-    "/sys/class/leds/fpga_led7/brightness",  
-    "/sys/class/leds/fpga_led8/brightness",  
+    "/sys/class/leds/fpga_led5/brightness",
+    "/sys/class/leds/fpga_led6/brightness",
+    "/sys/class/leds/fpga_led7/brightness",
+    "/sys/class/leds/fpga_led8/brightness",
     "/sys/class/leds/fpga_led9/brightness"
 };
 
-// Fonction pour allumer une LED
-void allumer_led(int led_index) {
-    FILE *fp = fopen(led_paths[led_index], "w");
-    if (fp == NULL) {
-        perror("Erreur lors de l'ouverture du fichier de la LED");
-        exit(EXIT_FAILURE);
-    }
-    fprintf(fp, "1");
-    fclose(fp);
-}
-
-// Fonction pour éteindre une LED
-void eteindre_led(int led_index) {
-    FILE *fp = fopen(led_paths[led_index], "w");
-    if (fp == NULL) {
-        perror("Erreur lors de l'ouverture du fichier de la LED");
-        exit(EXIT_FAILURE);
-    }
-    fprintf(fp, "0");
-    fclose(fp);
-}
+static int fds[NUM_LEDS];
 
 int main() {
-    while (1) {
-        // Chenillard de gauche à droite
-        for (int i = 0; i < 9; i++) {
-            allumer_led(i);
-            usleep(DELAY_MS * 1000); // Conversion ms en µs
-            eteindre_led(i);
-        }
-
-        // Chenillard de droite à gauche (optionnel pour un aller-retour)
-        for (int i = 9 - 2; i >=1; i--) {
-            allumer_led(i);
-            usleep(DELAY_MS * 1000);
-            eteindre_led(i);
-        }
+    while(1)
+    {
+       	for (int i = 0; i < NUM_LEDS; i++)
+       	{
+       		fds[i] = open(led_paths[i], O_WRONLY);
+       
+       		write(fds[i], "1", 1);
+       		usleep(DELAY_MS * 1000); // Conversion ms en µs
+       		write(fds[i], "0", 1);
+       		usleep(DELAY_MS * 1000); // Conversion ms en µs
+       
+       		close(fds[i]);
+       	}
     }
 
     return 0;
