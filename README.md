@@ -61,7 +61,9 @@ int main() {
 }
 ```
 
+
 > ![image](https://github.com/user-attachments/assets/d8a232d4-4bec-4603-8067-39b1af85cdfe)
+
 
 
 Écrire un programme en C qui réalise un chenillard
@@ -75,10 +77,15 @@ int main() {
 #define DELAY_MS 200 // Délai en millisecondes entre chaque allumage de LED
 
 const char *led_paths[NUM_LEDS] = {
-    "/sys/class/leds/fpga_led0/brightness", // Remplace par le chemin de ta première LED
-    "/sys/class/leds/fpga_led1/brightness", // Remplace par le chemin de ta deuxième LED
-    "/sys/class/leds/fpga_led2/brightness", // Remplace par le chemin de ta troisième LED
-    "/sys/class/leds/fpga_led3/brightness"  // Remplace par le chemin de ta quatrième LED
+    "/sys/class/leds/fpga_led1/brightness", 
+    "/sys/class/leds/fpga_led2/brightness", 
+    "/sys/class/leds/fpga_led3/brightness",  
+    "/sys/class/leds/fpga_led4/brightness",
+    "/sys/class/leds/fpga_led5/brightness", 
+    "/sys/class/leds/fpga_led6/brightness", 
+    "/sys/class/leds/fpga_led7/brightness",  
+    "/sys/class/leds/fpga_led8/brightness",  
+    "/sys/class/leds/fpga_led9/brightness"
 };
 
 // Fonction pour allumer une LED
@@ -106,14 +113,14 @@ void eteindre_led(int led_index) {
 int main() {
     while (1) {
         // Chenillard de gauche à droite
-        for (int i = 0; i < NUM_LEDS; i++) {
+        for (int i = 0; i < 9; i++) {
             allumer_led(i);
             usleep(DELAY_MS * 1000); // Conversion ms en µs
             eteindre_led(i);
         }
 
         // Chenillard de droite à gauche (optionnel pour un aller-retour)
-        for (int i = NUM_LEDS - 2; i >= 1; i--) {
+        for (int i = 9 - 2; i >=1; i--) {
             allumer_led(i);
             usleep(DELAY_MS * 1000);
             eteindre_led(i);
