@@ -33,9 +33,12 @@ On observe bien **le ping** :
 
 Réalisez un programme "Hello World !"
 ```arm-linux-gnueabihf-gcc hello.c -o hello.o```
-```**ici**```
+```
+**ici**
+```
 
 Écrire un programme en C qui réalise un chenillard
+
 ```**ici**```
 
 
