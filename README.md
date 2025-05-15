@@ -30,7 +30,13 @@ On observe bien **le ping** :
 > screen
 
 # **1.4 Découverte de la cible**
-<span class="math-inline">\[color\=blue\]Ce texte est bleu\.</span>[/color]
+
+Réalisez un programme "Hello World !"
+```arm-linux-gnueabihf-gcc hello.c -o hello.o```
+```**ici**```
+
+Écrire un programme en C qui réalise un chenillard
+```**ici**```
 
 
 
