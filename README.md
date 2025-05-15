@@ -1,7 +1,7 @@
 # LinuxEmbarque_ANOT_BEAUV
 Projet 3eme année Linux Embarqué
 
-le baud rate est à 115200
+le baud rate est à **115200**
 
 Pour vous identifier :
   * login : root
@@ -15,7 +15,6 @@ df -h
 > La taille est de : 
 
 La carte dispose de l'adresse IP suivante :
-
 > screen
 
 Modification de /etc/network/interfaces de la manière suivante :
@@ -27,4 +26,5 @@ auto eth0
 iface eth0 inet dhcp
 allow-hotplug eth0
 ```
-
+On observe bien **le ping** : 
+> screen
