@@ -150,11 +150,16 @@ git checkout 6b20a2929d54
 ```
 git config core.abbrev 7
 ```
-
-
-
-
-
+**Préparation de la compilation**
+```
+sudo apt install bc
+sudo apt install crossbuild-essential-armhf
+sudo apt install binutils-multiarch
+```
+Path :
+```
+whereis arm-linux-gnueabihf-gcc
+```
 
 
 
