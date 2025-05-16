@@ -298,23 +298,7 @@ module_exit(le_module_exit);
 ```
 
 ## 2.3 CrossCompilation de modules noyau
-*dejà fait !*
->```
->git clone https://github.com/terasic/linux-socfpga/
->git checkout 6b20a2929d54
->git config core.abbrev 7
->```
-## 2.3.1 PPréparation de la compilation
-```
-sudo apt install bc
-sudo apt install crossbuild-essential-armhf
-sudo apt install binutils-multiarch
-```
-Path :
-```
-whereis arm-linux-gnueabihf-gcc
-```
-**Récupéreation de la configuration actuelle du noyau**
+### 2.3.2 Récupéreation de la configuration actuelle du noyau
 ```
 gunzip config.gz
 mv config .config
@@ -335,8 +319,7 @@ make scripts
 * Pourquoi le chemin fini par un tiret "-" ?
 >Le tiret à la fin du préfixe indique à make (et aux Makefiles configurés pour la compilation croisée) que ce préfixe doit être utilisé avant le nom des outils de la chaîne de compilation
 
-**Hello World**
-
+### Hello World
 Ajouter :
 ```
 CFLAGS_MODULE=-fno-pic
