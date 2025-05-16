@@ -146,8 +146,7 @@ ici
 >git checkout 6b20a2929d54
 >git config core.abbrev 7
 >```
-
-**Préparation de la compilation**
+## 2.3.1 PPréparation de la compilation
 ```
 sudo apt install bc
 sudo apt install crossbuild-essential-armhf
