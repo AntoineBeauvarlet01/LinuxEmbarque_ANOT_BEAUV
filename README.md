@@ -160,12 +160,21 @@ Path :
 ```
 whereis arm-linux-gnueabihf-gcc
 ```
+**Récupéreation de la configuration actuelle du noyau**
+```
+gunzip config.gz
+mv config .config
+```
+# attention se mettre dans le dossier : ```~/linux-socfpga/```
+```
+export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
+export ARCH=arm
+make prepare
+make scripts
+```
 
-
-
-
-
-
-
-
+— Quel est le rôle des lignes commençant par export ?
+>Les commandes export configurent l'environnement pour que le processus de construction (make) sache qu'il doit effectuer une compilation croisée.
+— Pourquoi le chemin fini par un tiret "-" ?
+>Le tiret à la fin du préfixe indique à make (et aux Makefiles configurés pour la compilation croisée) que ce préfixe doit être utilisé avant le nom des outils de la chaîne de compilation
 
