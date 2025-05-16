@@ -165,7 +165,9 @@ whereis arm-linux-gnueabihf-gcc
 gunzip config.gz
 mv config .config
 ```
-# attention se mettre dans le dossier : ```~/linux-socfpga/```
+# attention 
+**se mettre dans le dossier : ```~/linux-socfpga/```**
+#
 ```
 export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
 export ARCH=arm
@@ -190,7 +192,8 @@ Si changement de terminal :
 export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
 export ARCH=arm
 ```
-# attention si "opération non permise" :
+# attention 
+**si "opération non permise" :**
 ```
 cp -r ~/src/TP2 ~/
 ```
@@ -206,8 +209,9 @@ On veut créer un chenillard dont on peut modifier :
 ```
 * La vitesse au moment du chargement du module.
 
-# attention **Ne cherchez pas pour cette séance à piloter les LED**
-
+# attention 
+**Ne cherchez pas pour cette séance à piloter les LED**
+#
 module respectant les conditions demandées :
 ```
 ici le code biche
