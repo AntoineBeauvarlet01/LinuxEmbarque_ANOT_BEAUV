@@ -299,27 +299,16 @@ module_exit(le_module_exit);
 
 ## 2.3 CrossCompilation de modules noyau
 ### 2.3.2 Récupéreation de la configuration actuelle du noyau
-```
-gunzip config.gz
-mv config .config
-```
-# attention 
-**se mettre dans le dossier : ```~/linux-socfpga/```**
-#
-```
-export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
-export ARCH=arm
-make prepare
-make scripts
-```
-
 * Quel est le rôle des lignes commençant par export ?
 >Les commandes export configurent l'environnement pour que le processus de construction (make) sache qu'il doit effectuer une compilation croisée.
 
 * Pourquoi le chemin fini par un tiret "-" ?
->Le tiret à la fin du préfixe indique à make (et aux Makefiles configurés pour la compilation croisée) que ce préfixe doit être utilisé avant le nom des outils de la chaîne de compilation
+> Le tiret à la fin du préfixe indique à make (et aux Makefiles configurés pour la compilation croisée) que ce préfixe doit être utilisé avant le nom des outils de la chaîne de compilation
 
-### Hello World
+### 2.3.3 Hello World
+# ON EST ICI
+Le Makefle a été modifié et le make fonctionne, je pense qu'il faudra refaire la copie en dehors de /src la prochaine fois pcq ce n'est pas un répertoire partagé.
+
 Ajouter :
 ```
 CFLAGS_MODULE=-fno-pic
