@@ -121,6 +121,14 @@ programme qui accède directement aux registres depuis l’espace utilisateur :
 ```
 ivi
 ```
+## 2.2 Compilation de module noyau sur la VM
+```
+sudo apt install linux-headers-amd64
+sudo apt install bc
+```
+— utilisation de paramètres au chargement du module
+— création d’un entrée dans /proc
+— utilisation d’un timer
 
 
 
