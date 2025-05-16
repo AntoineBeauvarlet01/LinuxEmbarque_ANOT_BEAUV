@@ -178,3 +178,36 @@ make scripts
 — Pourquoi le chemin fini par un tiret "-" ?
 >Le tiret à la fin du préfixe indique à make (et aux Makefiles configurés pour la compilation croisée) que ce préfixe doit être utilisé avant le nom des outils de la chaîne de compilation
 
+**Hello World**
+
+Ajouter :
+```
+CFLAGS_MODULE=-fno-pic
+```
+Si changement de terminal : 
+```
+export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
+export ARCH=arm
+```
+# attention si "opération non permise" :
+```
+cp -r ~/src/TP2 ~/
+```
+#
+**commande dmesg et autres modules:**
+screen
+
+## 2.3.4 Chenillard (Yes !)
+On veut créer un chenillard dont on peut modifier :
+* Le pattern depuis le fichier :
+```
+/proc/ensea/chenille
+```
+* La vitesse au moment du chargement du module.
+
+# attention **Ne cherchez pas pour cette séance à piloter les LED**
+
+module respectant les conditions demandées :
+```
+ici le code biche
+```
