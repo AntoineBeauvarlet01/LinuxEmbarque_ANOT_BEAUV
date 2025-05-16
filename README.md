@@ -173,9 +173,10 @@ make prepare
 make scripts
 ```
 
-— Quel est le rôle des lignes commençant par export ?
+* Quel est le rôle des lignes commençant par export ?
 >Les commandes export configurent l'environnement pour que le processus de construction (make) sache qu'il doit effectuer une compilation croisée.
-— Pourquoi le chemin fini par un tiret "-" ?
+
+* Pourquoi le chemin fini par un tiret "-" ?
 >Le tiret à la fin du préfixe indique à make (et aux Makefiles configurés pour la compilation croisée) que ce préfixe doit être utilisé avant le nom des outils de la chaîne de compilation
 
 **Hello World**
