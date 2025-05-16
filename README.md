@@ -141,7 +141,16 @@ ici
 
 ## 2.3 CrossCompilation de modules noyau
 
-192.168.0.207
+```
+git clone https://github.com/terasic/linux-socfpga/
+```
+```
+git checkout 6b20a2929d54
+```
+```
+git config core.abbrev 7
+```
+
 
 
 
