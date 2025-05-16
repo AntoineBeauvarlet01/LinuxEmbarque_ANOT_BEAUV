@@ -126,10 +126,22 @@ ivi
 sudo apt install linux-headers-amd64
 sudo apt install bc
 ```
-— utilisation de paramètres au chargement du module
-— création d’un entrée dans /proc
-— utilisation d’un timer
+> utilisation de paramètres au chargement du module
+```
+ici
+```
+> création d’un entrée dans /proc
+```
+ici
+```
+> utilisation d’un timer
+```
+ici
+```
 
+## 2.3 CrossCompilation de modules noyau
+
+192.168.0.207
 
 
 
