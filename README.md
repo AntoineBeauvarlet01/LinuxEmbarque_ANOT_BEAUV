@@ -2,6 +2,9 @@
 Projet 3DN - Linux embarqué
 
 Le baud rate est à **115200**
+
+Dans le dossier partie_2.3.3, il y a tous les codes à partir de la partie 2.3.3.
+
 # **1.3 Connexion au système**
 Pour vous identifier :
   * login : root
