@@ -308,9 +308,9 @@ module_exit(le_module_exit);
 ### 2.3.3 Hello World
 Sur cette séance, l'IP de la carte est : 192.168.0.253
 
-Voici le fonctionnement de notre Hello World, sur le cible, suite aux commandes insmod, rmmod (et dmesg) :
+Voici le fonctionnement de notre Hello World (avec paramètre), sur la cible, suite aux commandes insmod, rmmod (et dmesg) :
 
-![image](https://github.com/user-attachments/assets/dc770a6e-36e7-4360-85b8-3e915881e067)
+![image](https://github.com/user-attachments/assets/b01b65c5-bf51-433a-84fd-b0ee2484f7cb)
 
 
 ## 2.3.4 Chenillard (Yes !)
