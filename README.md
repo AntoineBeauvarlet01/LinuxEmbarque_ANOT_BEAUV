@@ -355,10 +355,15 @@ ici
 Réaliser un chenillard qui rempli les conditions suivantes :
 
 > Choix de la vitesse de balayage par une option au moment du chargement du module
+
 > Récupération de la vitesse courante par lecture du fichier /proc/ensea/speed
+
 > Modification de la patern par écriture dans le fichier /dev/ensea-led
+
 > Récupération du patern courant par lecture du fichier /dev/ensea-led
+
 > Modification du sens de balayage par écriture du fichier /proc/ensea/dir
+
 > Récupération du sens de balayage par lecture du fichier /proc/ensea/dir
 
 # 4 Petit projet : Afficheurs 7 segments
