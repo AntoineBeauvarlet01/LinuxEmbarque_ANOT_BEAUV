@@ -340,7 +340,7 @@ On veut créer un chenillard dont on peut modifier :
 #
 module respectant les conditions demandées :
 ```
-ici le code biche
+ici
 ```
 
 # 3 Device tree (TP3)
@@ -360,6 +360,33 @@ Réaliser un chenillard qui rempli les conditions suivantes :
 > Récupération du patern courant par lecture du fichier /dev/ensea-led
 > Modification du sens de balayage par écriture du fichier /proc/ensea/dir
 > Récupération du sens de balayage par lecture du fichier /proc/ensea/dir
+
+# 4 Petit projet : Afficheurs 7 segments
+# attention 
+**Les afficheurs 7 segments sont appelés "HEX" dans le code**
+
+## 4.2 Device Tree et module
+
+Écrire un module permettant d’afficher l’heure sur l’afficheur
+
+```
+ici
+```
+
+Il y a plusieurs possibilités pour réaliser ce projet :
+* Concevoir une interface entre le noyau et l’espace utilisateur (procfs, device driver...) et coder l’application du point de vue utilisateur
+
+ou
+
+* Récupérer l’heure courante dans le noyau et tout réaliser dans le module.
+
+
+
+
+
+
+
+
 
 
 
