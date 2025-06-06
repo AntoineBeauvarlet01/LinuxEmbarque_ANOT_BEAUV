@@ -321,10 +321,8 @@ On veut créer un chenillard dont on peut modifier :
 ```
 * La vitesse au moment du chargement du module.
 
-# attention 
-**Ne cherchez pas pour cette séance à piloter les LED**
-#
-module respectant les conditions demandées :
+![image](https://github.com/user-attachments/assets/8b583611-b9e1-418d-b27d-31a05e0c159e)
+
 ```
 ici
 ```
