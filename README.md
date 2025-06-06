@@ -321,67 +321,10 @@ On veut créer un chenillard dont on peut modifier :
 ```
 * La vitesse au moment du chargement du module.
 
+On affiche l'état des LEDs dans le terminal :
+
 ![image](https://github.com/user-attachments/assets/8b583611-b9e1-418d-b27d-31a05e0c159e)
 
-```
-ici
-```
-
-# 3 Device tree (TP3)
-
-## 3.1 module accedant au LED via /dev
-
-> Quel sont les rôles des principales fonctions (probe, read, write, remove), et quand entrent-elles en action ?
-
-## 3.2 Module final
-
-### 3.2.1 Cahier des charges
-Réaliser un chenillard qui rempli les conditions suivantes :
-
-> Choix de la vitesse de balayage par une option au moment du chargement du module
-
-> Récupération de la vitesse courante par lecture du fichier /proc/ensea/speed
-
-> Modification de la patern par écriture dans le fichier /dev/ensea-led
-
-> Récupération du patern courant par lecture du fichier /dev/ensea-led
-
-> Modification du sens de balayage par écriture du fichier /proc/ensea/dir
-
-> Récupération du sens de balayage par lecture du fichier /proc/ensea/dir
-
-# 4 Petit projet : Afficheurs 7 segments
-# attention 
-**Les afficheurs 7 segments sont appelés "HEX" dans le code**
-
-## 4.2 Device Tree et module
-
-Écrire un module permettant d’afficher l’heure sur l’afficheur
-
-```
-ici
-```
-
-Il y a plusieurs possibilités pour réaliser ce projet :
-* Concevoir une interface entre le noyau et l’espace utilisateur (procfs, device driver...) et coder l’application du point de vue utilisateur
-
-ou
-
-* Récupérer l’heure courante dans le noyau et tout réaliser dans le module.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Nous avons réussi à allumer les LEDS en choisissant le pattern au préalable, et avec la possibilité de modifier la vitesse en la passant en argument.
+Vous pouvez trouver une vidéo du fonctionnement en suivant ce lien (vidéo trop volumineuse) : https://drive.google.com/file/d/1CHqTUXQtdVonXUlZUTDZGHtk2QbcDFnn/view?usp=drive_link 
 
