@@ -306,26 +306,12 @@ module_exit(le_module_exit);
 > Le tiret à la fin du préfixe indique à make (et aux Makefiles configurés pour la compilation croisée) que ce préfixe doit être utilisé avant le nom des outils de la chaîne de compilation
 
 ### 2.3.3 Hello World
-# ON EST ICI
-Le Makefle a été modifié et le make fonctionne, je pense qu'il faudra refaire la copie en dehors de /src la prochaine fois pcq ce n'est pas un répertoire partagé.
+Sur cette séance, l'IP de la carte est : 192.168.0.253
 
-Ajouter :
-```
-CFLAGS_MODULE=-fno-pic
-```
-Si changement de terminal : 
-```
-export CROSS_COMPILE=<chemin_arm-linux-gnueabihf->
-export ARCH=arm
-```
-# attention 
-**si "opération non permise" :**
-```
-cp -r ~/src/TP2 ~/
-```
-#
-**commande dmesg et autres modules:**
-screen
+Voici le fonctionnement de notre Hello World suite aux commandes insmod, rmmod (et dmesg) :
+
+![image](https://github.com/user-attachments/assets/dc770a6e-36e7-4360-85b8-3e915881e067)
+
 
 ## 2.3.4 Chenillard (Yes !)
 On veut créer un chenillard dont on peut modifier :
