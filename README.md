@@ -343,6 +343,29 @@ module respectant les conditions demandées :
 ici le code biche
 ```
 
-
-
 # 3 Device tree (TP3)
+
+## 3.1 module accedant au LED via /dev
+
+> Quel sont les rôles des principales fonctions (probe, read, write, remove), et quand entrent-elles en action ?
+
+## 3.2 Module final
+
+### 3.2.1 Cahier des charges
+Réaliser un chenillard qui rempli les conditions suivantes :
+
+> Choix de la vitesse de balayage par une option au moment du chargement du module
+> Récupération de la vitesse courante par lecture du fichier /proc/ensea/speed
+> Modification de la patern par écriture dans le fichier /dev/ensea-led
+> Récupération du patern courant par lecture du fichier /dev/ensea-led
+> Modification du sens de balayage par écriture du fichier /proc/ensea/dir
+> Récupération du sens de balayage par lecture du fichier /proc/ensea/dir
+
+
+
+
+
+
+
+
+
